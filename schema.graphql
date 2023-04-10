@@ -1,0 +1,11 @@
+type NearTxReceiptsEntity @entity {
+    id: ID!
+    tx_id: String!
+    receipt_id: String!
+}
+
+type ProposalCreate @entity {
+    id: ID!
+    proposal_id: BigInt!
+    receipt_id: String!
+}
